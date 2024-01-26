@@ -4,7 +4,7 @@ import { GifsService } from '../../../gifs/services/gifs.service';
 @Component({
   selector: 'shared-sidebar',
   templateUrl: './sidebar.component.html',
-  styleUrl: './sidebar.component.css'
+
 })
 export class SidebarComponent {
 
@@ -14,7 +14,6 @@ export class SidebarComponent {
     return this.gifsService.tagsHistory;
   }
   searchGif(tag: string): void {
-    console.log(tag);
     this.gifsService.searchTag(tag);
   }
 
